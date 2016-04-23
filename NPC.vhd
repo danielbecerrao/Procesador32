@@ -1,9 +1,9 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: UTP
+-- Engineer: Daniel Hernando Becerra Ocampo
 -- 
 -- Create Date:    23:22:50 04/21/2016 
--- Design Name: 
+-- Design Name:	 
 -- Module Name:    NPC - Behavioral 
 -- Project Name: 
 -- Target Devices: 
@@ -30,11 +30,24 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity NPC is
+	Port ( Direccion : in  STD_LOGIC_VECTOR (31 downto 0);
+	NuevaDireccion : out  STD_LOGIC_VECTOR (31 downto 0);
+	Reset : in  STD_LOGIC;
+	Clock : in  STD_LOGIC);		  
 end NPC;
 
 architecture Behavioral of NPC is
-
 begin
+process(Clock, Direccion, Reset)
+	begin
+		if(Reset = '0')then
+			 <= (others=>'0');
+		else
+			if(rising_edge(clock))then
+				NuevaDireccion <= Direccion;
+			end if;
+		end if;
+	end process;
 
 
 end Behavioral;
