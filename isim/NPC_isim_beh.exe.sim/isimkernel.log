@@ -1,0 +1,10 @@
+Command line:
+   NPC_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56685
+
+Sat Apr 23 15:22:59 2016
+
+
+ Elaboration Time: 0.203125 sec

@@ -85,16 +85,18 @@ BEGIN
    begin		
       -- hold reset state for 100 ns.
       reset <= '1';
-		-- insert stimulus here 
+		-- insert stimulus here
+		wait for 30 ns;
+		reset <= '0';
       wait for 30 ns;	
-		address <= x"00000000"; 
+		Direccion <= x"00000000"; 
       reset <= '0'; 
 		wait for 30 ns;
-		address <= x"00000001";
+		Direccion <= x"00000001";
 		wait for 30 ns;
-		address <= x"00000002";
+		Direccion <= x"00000002";
 		wait for 30 ns;
-		address <= x"00000003";
+		Direccion <= x"00000003";
       
 
       wait;

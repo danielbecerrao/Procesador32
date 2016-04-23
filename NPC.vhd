@@ -40,7 +40,7 @@ architecture Behavioral of NPC is
 begin
 process(Clock, Direccion, Reset)
 	begin
-		if(Reset = '0')then 
+		if(Reset = '1')then 
 			NuevaDireccion <= x"00000000";
 		else
 			if(rising_edge(clock))then
