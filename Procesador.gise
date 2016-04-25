@@ -82,6 +82,9 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RF_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SumadorTB_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SumadorTB_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="UC.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="UC.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="UC.xst"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
@@ -109,6 +112,9 @@
     <transform xil_pn:end_ts="1461624749" xil_pn:in_ck="-745150715742153203" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1461624748">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="IMTB.vhd"/>
       <outfile xil_pn:name="NPC.vhd"/>
       <outfile xil_pn:name="NPCTB.vhd"/>
