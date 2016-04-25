@@ -2,14 +2,14 @@ Command line:
    PCTB_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  58303
+     -socket  58525
 
-Mon Apr 25 16:20:17 2016
+Mon Apr 25 16:51:51 2016
 
 
- Elaboration Time: 0.28125 sec
+ Elaboration Time: 0.21875 sec
 
- Current Memory Usage: 848.212 Meg
+ Current Memory Usage: 847.647 Meg
 
  Total Signals          : 8
  Total Nets             : 66
@@ -21,9 +21,9 @@ Mon Apr 25 16:20:17 2016
  Total Scalar Nets and Variables : 427
 Total Line Count : 21
 
- Total Simulation Time: 0.546875 sec
+ Total Simulation Time: 0.25 sec
 
- Current Memory Usage: 690.926 Meg
+ Current Memory Usage: 847.647 Meg
 
-Mon Apr 25 16:21:17 2016
+Mon Apr 25 16:52:05 2016
 

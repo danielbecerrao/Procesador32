@@ -1,0 +1,29 @@
+Command line:
+   IMTB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  58668
+
+Mon Apr 25 16:59:44 2016
+
+
+ Elaboration Time: 0.21875 sec
+
+ Current Memory Usage: 848.298 Meg
+
+ Total Signals          : 7
+ Total Nets             : 1089
+ Total Signal Drivers   : 3
+ Total Blocks           : 6
+ Total Primitive Blocks : 5
+ Total Processes        : 2
+ Total Traceable Variables  : 10
+ Total Scalar Nets and Variables : 1467
+Total Line Count : 16
+
+ Total Simulation Time: 0.265625 sec
+
+ Current Memory Usage: 848.298 Meg
+
+Mon Apr 25 17:00:09 2016
+
