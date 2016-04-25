@@ -74,6 +74,7 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PCTB_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="PC_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PC_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RF_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SumadorTB_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SumadorTB_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
@@ -100,7 +101,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1461621100" xil_pn:in_ck="-8880461865969172441" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1461621100">
+    <transform xil_pn:end_ts="1461623742" xil_pn:in_ck="2522355162658583855" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1461623742">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="IMTB.vhd"/>
@@ -108,6 +109,7 @@
       <outfile xil_pn:name="NPCTB.vhd"/>
       <outfile xil_pn:name="PC.vhd"/>
       <outfile xil_pn:name="PCTB.vhd"/>
+      <outfile xil_pn:name="RF.vhd"/>
       <outfile xil_pn:name="Sumador.vhd"/>
       <outfile xil_pn:name="SumadorTB.vhd"/>
       <outfile xil_pn:name="instructionMemory.vhd"/>
@@ -115,10 +117,12 @@
     <transform xil_pn:end_ts="1461621577" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4525393278363926996" xil_pn:start_ts="1461621577">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1461621577" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2365773577544855644" xil_pn:start_ts="1461621577">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1461386713" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-6347440892385443442" xil_pn:start_ts="1461386713">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -128,6 +132,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="IMTB.vhd"/>
       <outfile xil_pn:name="NPC.vhd"/>
       <outfile xil_pn:name="NPCTB.vhd"/>
@@ -140,6 +148,10 @@
     <transform xil_pn:end_ts="1461621582" xil_pn:in_ck="-8880461865969172441" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2954754602485717745" xil_pn:start_ts="1461621577">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="IMTB_beh.prj"/>
       <outfile xil_pn:name="IMTB_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -150,6 +162,10 @@
     <transform xil_pn:end_ts="1461621582" xil_pn:in_ck="1793786164996091691" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6776056630338772748" xil_pn:start_ts="1461621582">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="IMTB_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
