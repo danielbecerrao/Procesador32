@@ -16,3 +16,4 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa3s100e-vqg100-4 NPC.ngc NP
 map -intstyle ise -p xa3s100e-vqg100-4 -cm area -ir off -pr off -c 100 -o NPC_map.ncd NPC.ngd NPC.pcf 
 par -w -intstyle ise -ol high -t 1 NPC_map.ncd NPC.ncd NPC.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml NPC.twx NPC.ncd -o NPC.twr NPC.pcf 
+vhdtdtfi -prj Procesador -o D:/Biblioteca/Documents/Procesador/Procesador32/NPC.vhi -module NPC -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work NPC.vhd 
