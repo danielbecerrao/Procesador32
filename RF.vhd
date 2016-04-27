@@ -50,9 +50,6 @@ begin
 						Crs1 <= (others => '0');
 						Crs2 <= (others => '0');
 						registro <=(others =>"00000000000000000000000000000000");
-						registro(16)<="00000000000000000000000000010001";
-						registro(17)<="11111111111111111111111111110111";
-						registro(18)<="00000000000000000000000000001110";
 					else
 						Crs1 <= registro(conv_integer(Rs1));
 						Crs2 <= registro(conv_integer(Rs2));

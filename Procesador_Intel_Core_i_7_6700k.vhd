@@ -62,6 +62,15 @@ COMPONENT PC
 		);
 	END COMPONENT;
 	
+COMPONENT instructionMemory
+	PORT(
+		address : IN std_logic_vector(31 downto 0);
+		reset : IN std_logic;          
+		outInstruction : OUT std_logic_vector(31 downto 0)
+		);
+	END COMPONENT;
+
+	
 	COMPONENT UC
 	PORT(
 		OP : IN std_logic_vector(1 downto 0);
@@ -69,8 +78,46 @@ COMPONENT PC
 		ALU_OP : OUT std_logic_vector(5 downto 0)
 		);
 	END COMPONENT;
-
-signal SumadorToNPC, NPCToPC, PCToIM, IMToURS: STD_LOGIC_VECTOR (31 downto 0);
+	
+	COMPONENT RF
+	PORT(
+		Rs1 : IN std_logic_vector(4 downto 0);
+		Rs2 : IN std_logic_vector(4 downto 0);
+		Rsd : IN std_logic_vector(4 downto 0);
+		datawrite : IN std_logic_vector(31 downto 0);
+		rst : IN std_logic;          
+		CRs1 : OUT std_logic_vector(31 downto 0);
+		CRs2 : OUT std_logic_vector(31 downto 0)
+		);
+	END COMPONENT;
+	
+	COMPONENT MUX
+	PORT(
+		RfToMux : IN std_logic_vector(31 downto 0);
+		inm : IN std_logic;
+		seuToMux : IN std_logic_vector(31 downto 0);          
+		MuxToAlu : OUT std_logic_vector(31 downto 0)
+		);
+	END COMPONENT;
+	
+	COMPONENT SEU
+	PORT(
+		simm13 : IN std_logic_vector(12 downto 0);          
+		seu32 : OUT std_logic_vector(31 downto 0)
+		);
+	END COMPONENT;
+	
+	COMPONENT ALU
+	PORT(
+		Crs1 : IN std_logic_vector(31 downto 0);
+		Crs2 : IN std_logic_vector(31 downto 0);
+		ALU_Op : IN std_logic_vector(5 downto 0);          
+		ALU_Out : OUT std_logic_vector(31 downto 0)
+		);
+	END COMPONENT;
+	
+signal SumadorToNPC, NPCToPC, PCToIM, IMToURS, ALUToRF, RFToALU, RFToMUX, SEUToMUX, MUXToALU: STD_LOGIC_VECTOR (31 downto 0);
+signal UCToALU: STD_LOGIC_VECTOR (5 downto 0);
 begin
 
 	Inst_Sumador: Sumador PORT MAP(
@@ -100,9 +147,39 @@ begin
 	);	
 	
 	Inst_UC: UC PORT MAP(
-		OP => ,
-		OP3 => ,
-		ALU_OP => 
+		OP => IMToURS(31 downto 30),
+		OP3 => IMToURS(24 downto 19),
+		ALU_OP => UCtoALU
+	);	
+	
+	Inst_RF: RF PORT MAP(
+		Rs1 => IMToURS(18 downto 14),
+		Rs2 => IMToURS(4 downto 0),
+		Rsd => IMToURS(29 downto 25),
+		datawrite => ALUToRF,
+		CRs1 => RFToALU,
+		CRs2 => RFToMUX,
+		rst => Reset
+	);
+	
+	Inst_MUX: MUX PORT MAP(
+		RfToMux => RFToMUX,
+		inm => IMToURS(13),
+		seuToMux => SEUToMUX,
+		MuxToAlu => MUXToALU
+	);
+	
+	Inst_SEU: SEU PORT MAP(
+		simm13 => IMToURS(12 downto 0),
+		seu32 => SEUToMUX
+	);
+	
+	Inst_ALU: ALU PORT MAP(
+		Crs1 => RFToALU,
+		Crs2 => MUXToALU,
+		ALU_Op => UCtoALU,
+		ALU_Out => RFToALU
+	);
 	
 
 end Behavioral;

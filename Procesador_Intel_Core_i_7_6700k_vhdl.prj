@@ -1,0 +1,6 @@
+vhdl work "D:\Biblioteca\Documents\Procesador\Procesador32\UC.vhd"
+vhdl work "D:\Biblioteca\Documents\Procesador\Procesador32\Sumador.vhd"
+vhdl work "D:\Biblioteca\Documents\Procesador\Procesador32\PC.vhd"
+vhdl work "D:\Biblioteca\Documents\Procesador\Procesador32\NPC.vhd"
+vhdl work "D:\Biblioteca\Documents\Procesador\Procesador32\instructionMemory.vhd"
+vhdl work "D:\Biblioteca\Documents\Procesador\Procesador32\Procesador_Intel_Core_i_7_6700k.vhd"
