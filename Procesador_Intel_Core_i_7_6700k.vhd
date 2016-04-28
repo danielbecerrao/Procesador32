@@ -178,8 +178,10 @@ begin
 		Crs1 => RFToALU,
 		Crs2 => MUXToALU,
 		ALU_Op => UCtoALU,
-		ALU_Out => RFToALU
+		ALU_Out => ALUToRF
 	);
+	
+	OutProcesador <= ALUToRF;
 	
 
 end Behavioral;

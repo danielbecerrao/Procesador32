@@ -1,0 +1,6 @@
+[Inputs]
+Clock
+Reset
+[Outputs]
+=OutProcesador[31:0]=
+[BiDir]

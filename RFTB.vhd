@@ -82,14 +82,22 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-      wait for 100 ns;	
+      wait for 30 ns;	
 		rst <= '1';
-		wait for 100 ns;
+		wait for 30 ns;
 		rst <= '0';
 		Rs1 <= "10010";
 		Rs2 <= "10011";
 		Rsd <= "11000";
 		datawrite <= "10010000000001000000000000000001";
+		wait for 30 ns;
+		Rs1 <="11000";
+		Rsd <= "11100";
+		datawrite <= "10010000000001000000001100000001";
+		wait for 30 ns;
+		Rs2 <= "11100";
+		
+		
 
       -- insert stimulus here 
 

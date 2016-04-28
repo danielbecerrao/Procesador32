@@ -1,10 +1,19 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/Biblioteca/Documents/Procesador/Procesador32/IMTB_isim_beh.exe -prj D:/Biblioteca/Documents/Procesador/Procesador32/IMTB_beh.prj work.IMTB 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/Biblioteca/Documents/Procesador/Procesador32/ProcesadorTB_isim_beh.exe -prj D:/Biblioteca/Documents/Procesador/Procesador32/ProcesadorTB_beh.prj work.ProcesadorTB 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
+Parsing VHDL file "D:/Biblioteca/Documents/Procesador/Procesador32/UC.vhd" into library work
+Parsing VHDL file "D:/Biblioteca/Documents/Procesador/Procesador32/Sumador.vhd" into library work
+Parsing VHDL file "D:/Biblioteca/Documents/Procesador/Procesador32/SEU.vhd" into library work
+Parsing VHDL file "D:/Biblioteca/Documents/Procesador/Procesador32/RF.vhd" into library work
+Parsing VHDL file "D:/Biblioteca/Documents/Procesador/Procesador32/PC.vhd" into library work
+Parsing VHDL file "D:/Biblioteca/Documents/Procesador/Procesador32/NPC.vhd" into library work
+Parsing VHDL file "D:/Biblioteca/Documents/Procesador/Procesador32/MUX.vhd" into library work
 Parsing VHDL file "D:/Biblioteca/Documents/Procesador/Procesador32/instructionMemory.vhd" into library work
-Parsing VHDL file "D:/Biblioteca/Documents/Procesador/Procesador32/IMTB.vhd" into library work
+Parsing VHDL file "D:/Biblioteca/Documents/Procesador/Procesador32/ALU.vhd" into library work
+Parsing VHDL file "D:/Biblioteca/Documents/Procesador/Procesador32/Procesador_Intel_Core_i_7_6700k.vhd" into library work
+Parsing VHDL file "D:/Biblioteca/Documents/Procesador/Procesador32/ProcesadorTB.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
@@ -12,11 +21,20 @@ Compiling package std_logic_1164
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
 Compiling package textio
+Compiling architecture behavioral of entity Sumador [sumador_default]
+Compiling architecture behavioral of entity NPC [npc_default]
+Compiling architecture behavioral of entity PC [pc_default]
 Compiling architecture arqinstructionmemory of entity instructionMemory [instructionmemory_default]
-Compiling architecture behavior of entity imtb
+Compiling architecture behavioral of entity UC [uc_default]
+Compiling architecture behavioral of entity RF [rf_default]
+Compiling architecture behavioral of entity MUX [mux_default]
+Compiling architecture behavioral of entity SEU [seu_default]
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavioral of entity Procesador_Intel_Core_i_7_6700k [procesador_intel_core_i_7_6700k_...]
+Compiling architecture behavior of entity procesadortb
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 8 VHDL Units
-Built simulation executable D:/Biblioteca/Documents/Procesador/Procesador32/IMTB_isim_beh.exe
-Fuse Memory Usage: 34700 KB
-Fuse CPU Usage: 703 ms
+Waiting for 8 sub-compilation(s) to finish...
+Compiled 26 VHDL Units
+Built simulation executable D:/Biblioteca/Documents/Procesador/Procesador32/ProcesadorTB_isim_beh.exe
+Fuse Memory Usage: 34180 KB
+Fuse CPU Usage: 812 ms

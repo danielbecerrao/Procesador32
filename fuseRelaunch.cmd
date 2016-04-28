@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "D:/Biblioteca/Documents/Procesador/Procesador32/IMTB_isim_beh.exe" -prj "D:/Biblioteca/Documents/Procesador/Procesador32/IMTB_beh.prj" "work.IMTB" 
+-intstyle "ise" -incremental -o "D:/Biblioteca/Documents/Procesador/Procesador32/ProcesadorTB_isim_beh.exe" -prj "D:/Biblioteca/Documents/Procesador/Procesador32/ProcesadorTB_beh.prj" "work.ProcesadorTB" 

@@ -1,50 +1,60 @@
-V3 30
+V3 40
 FL D:/Biblioteca/Documents/Procesador/Procesador32/ALU.vhd 2016/04/25.18:32:23 P.20131013
-EN work/ALU 1461627148 FL D:/Biblioteca/Documents/Procesador/Procesador32/ALU.vhd \
+EN work/ALU 1461730890 FL D:/Biblioteca/Documents/Procesador/Procesador32/ALU.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/ALU/Behavioral 1461627149 \
-      FL D:/Biblioteca/Documents/Procesador/Procesador32/ALU.vhd EN work/ALU 1461627148
+AR work/ALU/Behavioral 1461730891 \
+      FL D:/Biblioteca/Documents/Procesador/Procesador32/ALU.vhd EN work/ALU 1461730890
 FL D:/Biblioteca/Documents/Procesador/Procesador32/IM.vhd 2016/04/25.16:32:08 P.20131013
 FL D:/Biblioteca/Documents/Procesador/Procesador32/InstructionMemory.vhd 2016/04/25.16:41:13 P.20131013
-EN work/instructionMemory 1461645184 \
+EN work/instructionMemory 1461730880 \
       FL D:/Biblioteca/Documents/Procesador/Procesador32/InstructionMemory.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
       PB std/TEXTIO 1381692176
-AR work/instructionMemory/arqInstructionMemory 1461645185 \
+AR work/instructionMemory/arqInstructionMemory 1461730881 \
       FL D:/Biblioteca/Documents/Procesador/Procesador32/InstructionMemory.vhd \
-      EN work/instructionMemory 1461645184
+      EN work/instructionMemory 1461730880
+FL D:/Biblioteca/Documents/Procesador/Procesador32/MUX.vhd 2016/04/25.18:44:48 P.20131013
+EN work/MUX 1461730886 FL D:/Biblioteca/Documents/Procesador/Procesador32/MUX.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/MUX/Behavioral 1461730887 \
+      FL D:/Biblioteca/Documents/Procesador/Procesador32/MUX.vhd EN work/MUX 1461730886
 FL D:/Biblioteca/Documents/Procesador/Procesador32/NPC.vhd 2016/04/23.15:21:57 P.20131013
-EN work/NPC 1461645180 FL D:/Biblioteca/Documents/Procesador/Procesador32/NPC.vhd \
+EN work/NPC 1461730876 FL D:/Biblioteca/Documents/Procesador/Procesador32/NPC.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/NPC/Behavioral 1461645181 \
-      FL D:/Biblioteca/Documents/Procesador/Procesador32/NPC.vhd EN work/NPC 1461645180
+AR work/NPC/Behavioral 1461730877 \
+      FL D:/Biblioteca/Documents/Procesador/Procesador32/NPC.vhd EN work/NPC 1461730876
 FL D:/Biblioteca/Documents/Procesador/Procesador32/PC.vhd 2016/04/23.15:13:29 P.20131013
-EN work/PC 1461645182 FL D:/Biblioteca/Documents/Procesador/Procesador32/PC.vhd \
+EN work/PC 1461730878 FL D:/Biblioteca/Documents/Procesador/Procesador32/PC.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/PC/Behavioral 1461645183 \
-      FL D:/Biblioteca/Documents/Procesador/Procesador32/PC.vhd EN work/PC 1461645182
-FL D:/Biblioteca/Documents/Procesador/Procesador32/Procesador_Intel_Core_i_7_6700k.vhd 2016/04/25.23:32:12 P.20131013
-EN work/Procesador_Intel_Core_i_7_6700k 1461645188 \
+AR work/PC/Behavioral 1461730879 \
+      FL D:/Biblioteca/Documents/Procesador/Procesador32/PC.vhd EN work/PC 1461730878
+FL D:/Biblioteca/Documents/Procesador/Procesador32/Procesador_Intel_Core_i_7_6700k.vhd 2016/04/26.23:20:49 P.20131013
+EN work/Procesador_Intel_Core_i_7_6700k 1461730892 \
       FL D:/Biblioteca/Documents/Procesador/Procesador32/Procesador_Intel_Core_i_7_6700k.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Procesador_Intel_Core_i_7_6700k/Behavioral 1461645189 \
+AR work/Procesador_Intel_Core_i_7_6700k/Behavioral 1461730893 \
       FL D:/Biblioteca/Documents/Procesador/Procesador32/Procesador_Intel_Core_i_7_6700k.vhd \
-      EN work/Procesador_Intel_Core_i_7_6700k 1461645188 CP Sumador CP NPC CP PC \
-      CP instructionMemory CP UC
-FL D:/Biblioteca/Documents/Procesador/Procesador32/RF.vhd 2016/04/25.17:35:38 P.20131013
-EN work/RF 1461624622 FL D:/Biblioteca/Documents/Procesador/Procesador32/RF.vhd \
+      EN work/Procesador_Intel_Core_i_7_6700k 1461730892 CP Sumador CP NPC CP PC \
+      CP instructionMemory CP UC CP RF CP MUX CP SEU CP ALU
+FL D:/Biblioteca/Documents/Procesador/Procesador32/RF.vhd 2016/04/26.23:09:03 P.20131013
+EN work/RF 1461730884 FL D:/Biblioteca/Documents/Procesador/Procesador32/RF.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/RF/Behavioral 1461624623 \
-      FL D:/Biblioteca/Documents/Procesador/Procesador32/RF.vhd EN work/RF 1461624622
+AR work/RF/Behavioral 1461730885 \
+      FL D:/Biblioteca/Documents/Procesador/Procesador32/RF.vhd EN work/RF 1461730884
+FL D:/Biblioteca/Documents/Procesador/Procesador32/SEU.vhd 2016/04/25.18:41:24 P.20131013
+EN work/SEU 1461730888 FL D:/Biblioteca/Documents/Procesador/Procesador32/SEU.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/SEU/Behavioral 1461730889 \
+      FL D:/Biblioteca/Documents/Procesador/Procesador32/SEU.vhd EN work/SEU 1461730888
 FL D:/Biblioteca/Documents/Procesador/Procesador32/Sumador.vhd 2016/04/25.16:23:11 P.20131013
-EN work/Sumador 1461645232 \
+EN work/Sumador 1461730874 \
       FL D:/Biblioteca/Documents/Procesador/Procesador32/Sumador.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Sumador/Behavioral 1461645233 \
+AR work/Sumador/Behavioral 1461730875 \
       FL D:/Biblioteca/Documents/Procesador/Procesador32/Sumador.vhd \
-      EN work/Sumador 1461645232
+      EN work/Sumador 1461730874
 FL D:/Biblioteca/Documents/Procesador/Procesador32/UC.vhd 2016/04/25.18:10:34 P.20131013
-EN work/UC 1461645186 FL D:/Biblioteca/Documents/Procesador/Procesador32/UC.vhd \
+EN work/UC 1461730882 FL D:/Biblioteca/Documents/Procesador/Procesador32/UC.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/UC/Behavioral 1461645187 \
-      FL D:/Biblioteca/Documents/Procesador/Procesador32/UC.vhd EN work/UC 1461645186
+AR work/UC/Behavioral 1461730883 \
+      FL D:/Biblioteca/Documents/Procesador/Procesador32/UC.vhd EN work/UC 1461730882
